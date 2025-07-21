@@ -1,0 +1,106 @@
+@media screen and (max-width: 768px) { 
+  .flex{
+    flex-direction: column;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  /* header */
+  header .container.flex{
+    flex-direction: row;
+  }
+  header .logo.flex{
+    flex-direction: row;
+  }
+  header .logo{
+    margin-left: -120px;
+  }
+  header .social-icon{
+    display: none;
+  }
+  /* hero , about  Section*/
+  #hero img,
+  #about img{
+    width: 100%;
+  }
+  #hero,
+  #about{
+    padding: 0.8rem;
+  }
+  #hero h1{
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  #about h2{
+    font-size: 1.8rem;
+  }
+  #about h4{
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  /* menu */
+   #openBtn{
+        display: block;
+    }
+    #navbar{
+        display: none;
+    }
+    /* counter section */
+    #counters .counter-box h2{
+      font-size: 2.5rem;
+    }
+    /* whyUs section */
+    #whyUs .card.flex{
+    flex-direction: row;
+}
+ #whyUs{
+  padding: 3rem 0;
+ }
+ #roadmap .slide {
+  min-width: 100%;
+  }
+
+ #roadmap img{
+  width: 50%;
+ }
+ #token .cards.grid{
+  grid-template-columns: repeat(2, 1fr);
+ }
+ #faq{
+  padding: 0;
+ }
+.faq-container {
+      max-width: 95%;}
+      footer{
+        padding: 2rem 0;
+      }
+      footer .content .flex{
+        flex-direction: row;
+      }
+footer .grid,
+footer .cards.grid{
+ grid-template-columns: 1fr;
+}
+footer .flex{
+  flex-direction: column;
+text-align: center;
+}
+footer .flex p{
+  margin-bottom: 0.6rem;
+}
+
+
+
+/* ============= other pages =========== */
+#hero .hero-flex h2{
+  font-size: 2rem;
+}
+#hero .hero-flex img{
+  width: 60%;
+}
+ 
+ }
+
+
+
+/* @media screen and (max-width: 480px) {   } */
