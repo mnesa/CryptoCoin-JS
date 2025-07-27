@@ -37,36 +37,7 @@ let observer = new IntersectionObserver((entries, observer) => {
 valueDisplays.forEach(el => observer.observe(el));
 
 
-// ============ Roadmap section
-  const track = document.getElementById('sliderTrack');
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    let index = 0;
 
-    // Clone first 3 slides to end for infinite effect
-    for (let i = 0; i < 3; i++) {
-      const clone = slides[i].cloneNode(true);
-      track.appendChild(clone);
-    }
-
-    function move(dir) {
-      const slideWidth = slides[0].offsetWidth + 16; // gap
-      index += dir;
-      track.style.transition = 'transform 0.5s ease-in-out';
-      track.style.transform = `translateX(-${index * slideWidth}px)`;
-
-      if (index >= totalSlides) {
-        setTimeout(() => {
-          track.style.transition = 'none';
-          index = 0;
-          track.style.transform = `translateX(-${index * slideWidth}px)`;
-        }, 500);
-      } else if (index < 0) {
-        index = totalSlides - 1;
-        track.style.transition = 'none';
-        track.style.transform = `translateX(-${index * slideWidth}px)`;
-      }
-    }
 
   
 
@@ -123,6 +94,40 @@ valueDisplays.forEach(el => observer.observe(el));
   window.addEventListener("scroll", revealOnScroll);
   window.addEventListener("load", revealOnScroll); // initial load check
 
+
+// form =============================
+
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // prevent page reload
+
+    // Input values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Email pattern check
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    // Validation
+    if (!name || !email || !subject || !message) {
+      alert('⚠️ Please fill in all fields.');
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert('❌ Please enter a valid email address.');
+      return;
+    }
+
+    // If everything is valid
+    alert('✅ Thank you! Your message has been sent.');
+    
+    // Optional: Clear form
+    form.reset();
+  });
 
 
     

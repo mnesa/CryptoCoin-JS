@@ -20,11 +20,19 @@
             </div>
             <nav id="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="menu-active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="pages.html">Pages</a></li>
+                    <li class="dropdown">
+                    <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="token.html">Token Sale</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="404.html">404 page</a></li>
+                    </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -42,11 +50,19 @@
             <i class="fa-solid fa-xmark"></i>
         </div>
             <ul>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a href="index.html" class="menu-active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="pages.html">Pages</a></li>
+                    <li class="dropdown">
+                    <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="features.html">Features</a></li>
+                      <li><a href="token.html">Token Sale</a></li>
+                      <li><a href="faq.html">FAQs</a></li>
+                      <li><a href="404.html">404 page</a></li>
+                    </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
         </div>
@@ -206,7 +222,7 @@
     </div>
   </section>
 
-  <!--=============== Roadmap Start ======================-->
+  <!--=============== Roadmap Section ======================-->
     <section id="roadmap">
         <h2>Roadmap</h2>
         <h3>We Translate Your Dream Into Reality</h3>
@@ -387,12 +403,14 @@
     <div class="container flex">
         <p>&copy; <span>Your Site Name</span>, All Right Reserved.</p>
         <p><span>Designed By HTML Codex</span> Distributed By ThemeWagon</p>
+        
     </div>
  </footer>
-                
+  <p id="top"><a href="#hero"><i class="fa-solid fa-arrow-up"></i></a></p>              
 
 
    
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

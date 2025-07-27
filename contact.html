@@ -12,7 +12,7 @@
 
 </head>
 <body>
-      <header>
+       <header>
         <div class="container flex">
             <div class="logo flex">
                 <img src="images/icon-1.png" alt="logo">
@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="service.html" class="menu-active">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
                     <li><a href="roadmap.html">Roadmap</a></li>
                     <li class="dropdown">
                     <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
@@ -33,7 +33,7 @@
                         <li><a href="404.html">404 page</a></li>
                     </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="menu-active">Contact</a></li>
                 </ul>
             </nav>
              <div id="openBtn">
@@ -71,59 +71,83 @@
  <!-- ====== Hero Section ======= -->
 <section id="hero">
     <div class="container hero-flex">
-                <h2>Services </h2>
+                <h2>Contact </h2>
 
             <img src="images/hero-2.png" alt="hero-1">
 
     </div>
 </section>
   
-<!-- ======= services page =========-->
-  <section id="services" class="service-page">
-    <div class="container reveal">
-        <h2>Services</h2>
-        <h3>Buy, Sell And Exchange Cryptocurrency</h3>
-        <div class="cards grid">
-            <div class="card">
-                <img src="images/icon-7.png" alt="">
-                <h4>Currency Wallet</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+<!-- ======= contact page =========-->
+<section id="contact" class="reveal">
+<div class="container">
+    <div class="cards grid">
+        <div class="card">
+            <h2>contact us</h2>
+            <h3>If You Have Any Query, Please Contact Us</h3>
+            <div class="contact">
+                <p>Our office:</p>
+                <h4>123 Street, New York, USA</h4>
+                <hr>
+                <p>Call us:</p>
+                <h4>+012 345 6789</h4>
+                <hr>
+                <p>Mail us:</p>
+                <h4>info@example.com</h4>
+                <hr>
+                <p>Follow us:</p>
+                <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-                        <div class="card">
-                <img src="images/icon-3.png" alt="">
-                <h4>Currency Transaction</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-                        <div class="card">
-                <img src="images/icon-9.png" alt="">
-                <h4>Bitcoin Investmentt</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+            <div>
+                <a href="#" class="btn btn-left">Say Hello</a>
             </div>
-                        <div class="card">
-                <img src="images/icon-5.png" alt="">
-                <h4>Currency Exchange</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-                        <div class="card">
-                <img src="images/icon-4.png" alt="">
-                <h4>Bitcoin Escrow</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-                        <div class="card">
-                <img src="images/icon-8.png" alt="">
-                <h4>Token Sale</h4>
-                <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <a href="#" class="btn-arrow">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            <div>
+            <form id="contactForm" class="contact-form">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet minus, suscipit blanditiis quo quas placeat velit cum nulla optio officiis dicta deserunt corporis, voluptate unde ad porro laborum saepe, pariatur ipsum ullam error.</p>
+
+                <div class="row">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+
+
+            </form>
             </div>
         </div>
     </div>
-  </section>    
-    <!-- =========== Footer ============= -->
+
+</div>
+</section>
+
+<!-- ========= google map =========== -->
+ <section class="map-section reveal">
+  <!-- <h4>Find Us on Google Map</h4> -->
+  <div class="map-container">
+    <!-- Paste the iframe here -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14759.860413803188!2d91.8278813373687!3d22.354946469536905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad27656c600855%3A0xa4be32d307a83aee!2sBali%20Arcade!5e0!3m2!1sen!2sbd!4v1753351188901!5m2!1sen!2sbd" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+            
+    
+<!-- =========== Footer ============= -->
  <footer>
     <div class="container">
         <div class="grid">
@@ -194,3 +218,16 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- 
+Google Map থেকে Embed Code কপি করো
+👉 এই লিংকে যাও: https://www.google.com/maps
+
+🔍 এরপর:
+
+তোমার Location সার্চ করো (যেমন: Dhaka, Bangladesh)
+
+Share বাটনে ক্লিক করো → তারপর Embed a map ট্যাবে যাও
+
+তারপর iframe code কপি করো
+-->

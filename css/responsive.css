@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) { 
+  body{
+    padding-top: 100px;
+  }
   .flex{
     flex-direction: column;
   }
@@ -45,6 +48,21 @@
     #navbar{
         display: none;
     }
+      .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: var(--white);
+    box-shadow: 5px 5px 10px var(--secondery-color);
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
     /* counter section */
     #counters .counter-box h2{
       font-size: 2.5rem;
@@ -97,6 +115,12 @@ footer .flex p{
 }
 #hero .hero-flex img{
   width: 60%;
+}
+.contact-form .row {
+    flex-direction: column;
+  }
+  #contact .cards.grid{
+  grid-template-columns: 1fr;
 }
  
  }
